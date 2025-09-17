@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: your-dockerhub/simplehelm
+  repository: almuko/simplehelm
   tag: "latest"
   pullPolicy: IfNotPresent
 
@@ -13,7 +13,7 @@ ingress:
   enabled: true
   className: "nginx"
   hosts:
-    - host: hello.local
+    - host: simplehelm.carservices.kz
       paths:
         - path: /
           pathType: Prefix
