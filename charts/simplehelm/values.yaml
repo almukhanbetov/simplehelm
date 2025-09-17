@@ -17,3 +17,5 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
+        - path: /hello
+          pathType: Prefix  
